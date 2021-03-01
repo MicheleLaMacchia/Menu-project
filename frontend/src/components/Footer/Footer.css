@@ -1,0 +1,12 @@
+.footer-pics-line {
+  /* rende il div un footer*/
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-pic {
+  /* rende le foto una banca unica*/
+  height: 20vh;
+  width: 33.3%;
+}

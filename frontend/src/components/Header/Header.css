@@ -1,0 +1,7 @@
+.header {
+  /* rende il div un footer*/
+  position: relative;
+  text-align: center;
+  top: 0;
+  width: 100%;
+}
