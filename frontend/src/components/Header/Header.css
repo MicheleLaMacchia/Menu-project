@@ -1,7 +1,19 @@
 .header {
-  /* rende il div un footer*/
+  /* rende il div un header*/
   position: relative;
   text-align: center;
+  height: 5vh;
   top: 0;
   width: 100%;
+
+  /* colorazione */
+  background-color: darkgrey;
+  color: darkslategray;
+  font-family: "Courier New", Courier, monospace;
+  font-size: larger;
+}
+
+.header-pic {
+  height: 5vh;
+  width: 10%;
 }
