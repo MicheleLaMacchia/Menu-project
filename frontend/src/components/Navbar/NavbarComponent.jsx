@@ -14,6 +14,7 @@ const NavbarComponent = () => {
     });
   }, []);
 
+  // src={`data:image/png;base64,${cat.immagine}`}
   return (
     <Navbar bg="info" expand="md">
       <Navbar.Brand href="home">MENU</Navbar.Brand>
