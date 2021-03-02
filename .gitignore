@@ -10,6 +10,7 @@ Backend/.settings/
 Backend/target/
 Backend/.classpath
 Backend/.project
+Backend/bin/
 
 # building
 backend/build
