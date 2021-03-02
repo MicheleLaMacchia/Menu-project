@@ -5,8 +5,7 @@ import Container from "react-bootstrap/Container";
 import NavbarComponent from "./components/Navbar/NavbarComponent";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-
-//import Card from "react-bootstrap/Card";
+import HomeComponent from "./components/Home/HomeComponent";
 
 function App() {
   return (
@@ -16,7 +15,8 @@ function App() {
         <NavbarComponent />
         <Router>
           <Switch>
-            <Route />
+            <Route exact path="/" component={HomeComponent} />
+            <Route path="/home" component={HomeComponent} />
           </Switch>
         </Router>
       </Container>

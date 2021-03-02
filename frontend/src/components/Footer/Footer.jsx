@@ -19,6 +19,18 @@ const Footer = () => {
         src={spaghettiPomodoro}
         alt="spaghetti al pomodoro"
       />
+      <img className="footer-pic" src={insalata} alt="insalata" />
+      <img className="footer-pic" src={carneGriglia} alt="carne alla griglia" />
+      <img
+        className="footer-pic"
+        src={pizzaMargherita}
+        alt="pizza margherita"
+      />
+      <img
+        className="footer-pic"
+        src={spaghettiPomodoro}
+        alt="spaghetti al pomodoro"
+      />
     </div>
   );
 };

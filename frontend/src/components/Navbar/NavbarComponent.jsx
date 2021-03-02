@@ -9,12 +9,10 @@ const NavbarComponent = () => {
 
   useEffect(() => {
     getAllCategories().then((res) => {
-      console.log("chiamo il DB");
       setCategorie(res.data);
     });
   }, []);
 
-  // src={`data:image/png;base64,${cat.immagine}`}
   return (
     <Navbar bg="info" expand="md">
       <Navbar.Brand href="home">MENU</Navbar.Brand>
@@ -23,7 +21,7 @@ const NavbarComponent = () => {
         <Nav className="mr-auto">
           {categorie.map((cat) => {
             return (
-              <Nav.Link key={cat.id} href={cat.nome.toLowerCase()}>
+              <Nav.Link key={cat.id} href={cat.link}>
                 {cat.nome}
               </Nav.Link>
             );

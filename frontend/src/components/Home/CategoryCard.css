@@ -1,0 +1,9 @@
+.single-card {
+  text-align: center;
+  width: 33.3%;
+}
+
+.card-image {
+  height: 30vh;
+  width: 22vw;
+}

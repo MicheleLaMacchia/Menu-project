@@ -8,5 +8,5 @@
 .footer-pic {
   /* rende le foto una banca unica*/
   height: 10vh;
-  width: 25%;
+  width: calc(100% / 8);
 }
