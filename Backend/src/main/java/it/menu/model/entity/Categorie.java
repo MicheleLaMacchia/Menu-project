@@ -6,6 +6,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Lob;
 import javax.persistence.Table;
 
 @Entity
@@ -18,7 +19,8 @@ public class Categorie {
 	@Column(name="nome")
 	private String nome;
 	@Column(name="immagine")
-	private String immagine;
+	@Lob
+	private byte[] immagine;
 	@Column(name="ordine")
 	private Integer ordine;
 	@Column(name="username")
@@ -26,7 +28,7 @@ public class Categorie {
 	@Column(name="data_aggiornamento")
 	private LocalDateTime dataAggiornamento;
 	
-	public Categorie(Integer id, String nome, String immagine, Integer ordine, String username,
+	public Categorie(Integer id, String nome, byte[] immagine, Integer ordine, String username,
 			LocalDateTime dataAggiornamento) {
 		super();
 		this.id = id;
@@ -53,10 +55,10 @@ public class Categorie {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public String getImmagine() {
+	public byte[] getImmagine() {
 		return immagine;
 	}
-	public void setImmagine(String immagine) {
+	public void setImmagine(byte[] immagine) {
 		this.immagine = immagine;
 	}
 	public Integer getOrdine() {
