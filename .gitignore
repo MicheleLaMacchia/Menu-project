@@ -1,9 +1,15 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# dependencies
+# frontend
 frontend/node_modules
 frontend/.pnp
 frontend/.pnp.js
+
+# backend
+Backend/.settings/
+Backend/target/
+Backend/.classpath
+Backend/.project
 
 # building
 backend/build
