@@ -1,6 +1,7 @@
 .single-card {
+  margin: 1rem;
   text-align: center;
-  width: 33.3%;
+  width: 30%;
 }
 
 .card-image {

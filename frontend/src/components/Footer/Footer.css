@@ -1,6 +1,6 @@
 .footer-pics-line {
   /* rende il div un footer*/
-  position: fixed;
+  position: sticky;
   bottom: 0;
   width: 100%;
 }

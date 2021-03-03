@@ -1,4 +1,4 @@
-package it.menu.model.entity;
+package it.menu.repositories.entities;
 
 import java.time.LocalDateTime;
 import java.util.Arrays;
