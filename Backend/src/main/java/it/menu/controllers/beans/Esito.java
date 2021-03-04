@@ -12,6 +12,9 @@ public class Esito {
 
 	// String arguments to be associated with the key
 	private String[] args = null;
+	
+	public Esito() {
+	}
 
 	public Esito(String target) {
 		this.code = -1;

@@ -10,8 +10,7 @@ const HomeComponent = () => {
 
   useEffect(() => {
     getAllCategories().then((res) => {
-      console.log("chiamo il DB nell'homeComponent", res.data);
-      setCategorie(res.data);
+      setCategorie(res.data.categorie);
     });
   }, []);
 

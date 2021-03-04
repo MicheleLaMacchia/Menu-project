@@ -9,7 +9,7 @@ const NavbarComponent = () => {
 
   useEffect(() => {
     getAllCategories().then((res) => {
-      setCategorie(res.data);
+      setCategorie(res.data.categorie);
     });
   }, []);
 
