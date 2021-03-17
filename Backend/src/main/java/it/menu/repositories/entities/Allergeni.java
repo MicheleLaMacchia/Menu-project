@@ -25,6 +25,7 @@ public class Allergeni {
 	@Lob
 	private byte[] immagine;
 	
+	
 	public Integer getId() {
 		return id;
 	}
