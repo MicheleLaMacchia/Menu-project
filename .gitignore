@@ -11,6 +11,7 @@ Backend/target/
 Backend/.classpath
 Backend/.project
 Backend/bin/
+Backend/src/main/resources/application.properties
 
 # building
 backend/build
