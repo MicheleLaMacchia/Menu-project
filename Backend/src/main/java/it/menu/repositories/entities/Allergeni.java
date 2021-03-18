@@ -1,5 +1,7 @@
 package it.menu.repositories.entities;
 
+import java.time.LocalDateTime;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -8,6 +10,13 @@ import javax.persistence.Id;
 import javax.persistence.Lob;
 import javax.persistence.Table;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @Table(name = "allergeni")
 public class Allergeni {
@@ -15,58 +24,20 @@ public class Allergeni {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	
-	@Column(name = "nome_allergene")
+	@Column(name = "nome")
 	private String nome;
 	
-	@Column(name = "descrizione_allergene")
+	@Column(name = "descrizione")
 	private String descrizione;
 	
-	@Column(name = "immagine_allergene")
+	@Column(name = "icona")
 	@Lob
 	private byte[] immagine;
 	
+	@Column(name = "username")
+	private String username;
 	
-	public Integer getId() {
-		return id;
-	}
-
-	public void setId(Integer id) {
-		this.id = id;
-	}
-
-	public String getNome() {
-		return nome;
-	}
-
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-
-	public String getDescrizione() {
-		return descrizione;
-	}
-
-	public void setDescrizione(String descrizione) {
-		this.descrizione = descrizione;
-	}
+	@Column(name = "data_aggiornamento")
+	private LocalDateTime dataAggiornamento;
 	
-	public byte[] getImmagine() {
-		return immagine;
-	}
-
-	public void setImmagine(byte[] immagine) {
-		this.immagine = immagine;
-	}
-
-	public Allergeni(Integer id, String nome, String descrizione, byte[] immagine) {
-		super();
-		this.id = id;
-		this.nome = nome;
-		this.descrizione = descrizione;
-		this.immagine= immagine;
-	}
-	
-	
-	
-
 }
